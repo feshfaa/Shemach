@@ -2,9 +2,10 @@
   "name": "nodejs-soap-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "service.wsdl",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon Server/server",
+    "client": "node Client/client"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.15.2",
+    "nodemon": "^2.0.16",
     "soap": "^0.19.0"
   }
 }
